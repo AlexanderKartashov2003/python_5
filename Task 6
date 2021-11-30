@@ -1,0 +1,3 @@
+строка = input("Введите строчку")
+max_item = lambda s: max(t := {i: s.count(i) for i in s}, key=t.get)
+print(max_item(строка))
