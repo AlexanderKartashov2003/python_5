@@ -30,4 +30,4 @@ for i in range(a):
     capital = input("Назовите столицу страны {}: ".format(choice['name']))
     if capital.lower() == choice['capital'].lower():
         tot_points += 1
-print ('Вы заработали баллов:', tot_points)
+print ('Количество правильных ответов:', tot_points)
