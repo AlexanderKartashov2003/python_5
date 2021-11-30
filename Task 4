@@ -1,0 +1,33 @@
+import random
+country_dlist = [{'capital': 'Антананариву',
+  'name': 'Мадагаскар'},
+ {'capital': 'Бандар-Сери-Бегаван',
+  'name': 'Бруней'},
+ {'capital': 'Москва',
+  'name': 'Россия'},
+ {'capital': 'Нур-Султан',
+  'name': 'Казахстан'},
+ {'capital': 'Улан-Батор',
+  'name': 'Монголия'},
+ {'capital': 'Пхеньян',
+  'name': 'КНДР'},
+ {'capital': 'Сеул',
+  'name': 'Южная Корея'},
+ {'capital': 'Бразилиа',
+  'name': 'Бразилия'},
+ {'capital': 'Любляна',
+  'name': 'Словения'},
+ {'capital': 'Братислава',
+  'name': 'Словакия'},
+ {'capital': 'Варшава',
+  'name': 'Польша'},
+ ]
+tot_points = 0
+a = len(country_dlist)
+for i in range(a):
+    choice = random.choice(country_dlist)
+    que = country_dlist.remove(choice)
+    capital = input("Назовите столицу страны {}: ".format(choice['name']))
+    if capital.lower() == choice['capital'].lower():
+        tot_points += 1
+print ('Вы заработали баллов:', tot_points)
